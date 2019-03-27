@@ -1,0 +1,26 @@
+{
+  "name": "my-karabiner-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whatasoda/my-karabiner-config.git"
+  },
+  "author": "whatasoda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whatasoda/my-karabiner-config/issues"
+  },
+  "homepage": "https://github.com/whatasoda/my-karabiner-config#readme",
+  "dependencies": {
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.4000"
+  },
+  "devDependencies": {
+    "@types/node": "^11.12.0"
+  }
+}
