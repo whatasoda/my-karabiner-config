@@ -36,7 +36,7 @@ export type Manipurator = {
     to_if_invoked?: To[];
     to_if_canceled?: To[];
   };
-  conditions?: any[];
+  conditions?: Condition[];
   parameters?: any;
   description?: string;
 }
@@ -74,3 +74,17 @@ type To = {
   hold_down_milliseconds?: number;
 };
 
+
+type Condition =
+  | {
+    type: 'input_source_if';
+    input_sources: InputSource[];
+  }
+  
+  
+  
+type InputSource = {
+  language?: string;
+  input_source_id?: string;
+  input_mode_id?: string;
+}
