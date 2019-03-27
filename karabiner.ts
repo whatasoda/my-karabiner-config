@@ -35,9 +35,17 @@ type Rule = {
 type Manipurator = {
   type: 'basic',
   from: From;
-  to?: To;
-  to_if_alone?: To;
-  to_if_held_down?: To;
+  to?: To[];
+  to_if_alone?: To[];
+  to_if_held_down?: To[];
+  to_after_key_up?: To[];
+  to_delayed_action?: {
+    to_if_invoked?: To[];
+    to_if_canceled?: To[];
+  };
+  conditions?: any[];
+  parameters?: any;
+  description?: string;
 }
 
 type From = {
